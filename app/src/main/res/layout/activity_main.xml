@@ -52,4 +52,51 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnStart" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <EditText
+        android:id="@+id/GRE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="請輸入綠燈秒數"
+        android:inputType="textPersonName"
+        android:shadowColor="#000000"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/YEL"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/glf" />
+
+    <EditText
+        android:id="@+id/YEL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:ems="10"
+        android:hint="請輸入黃燈秒數"
+        android:inputType="textPersonName"
+        android:shadowColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/RED"
+        app:layout_constraintStart_toEndOf="@+id/GRE"
+        app:layout_constraintTop_toTopOf="@+id/glf" />
+
+    <EditText
+        android:id="@+id/RED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="請輸入紅燈秒數"
+        android:inputType="textPersonName"
+        android:shadowColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/YEL"
+        app:layout_constraintTop_toTopOf="@+id/glf" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
